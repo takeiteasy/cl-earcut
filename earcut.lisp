@@ -359,7 +359,8 @@ then selects the best bridge vertex (closest with smallest reflex angle)."
                    (>= (earcut-node-x p) mx)
                    (/= hx (earcut-node-x p))
                    (%earcut-point-in-triangle-p
-                    (if (< hy my) hx qx) mx my
+                    (if (< hy my) hx qx) hy
+                    mx my
                     (if (>= hy my) hx qx) hy
                     (earcut-node-x p) (earcut-node-y p)))
           (let ((tan-val (abs (/ (- hy (earcut-node-y p))
