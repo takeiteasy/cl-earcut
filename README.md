@@ -2,6 +2,21 @@
 
 Common Lisp implementation of the `earcut` algorithm.
 
+## Installation
+
+From the takeiteasy Quicklisp dist:
+
+```lisp
+(ql-dist:install-dist "https://takeiteasy.github.io/ql-dist/dist/takeiteasy.txt")
+(ql:quickload :cl-earcut)
+```
+
+Or clone into Quicklisp's local-projects:
+
+```sh
+git clone https://github.com/takeiteasy/cl-earcut ~/quicklisp/local-projects/cl-earcut
+```
+
 ## LICENSE
 
 ```text
